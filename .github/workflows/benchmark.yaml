@@ -1,0 +1,16 @@
+env:
+  GOPRIVATE: "github.com/yousuf-git/dune-project"
+name: Benchmark
+jobs:
+  test:
+    strategy:
+      matrix:
+        os: [ubuntu-latest, macos-latest, windows-latest]
+    runs-on: ${{ matrix.os }}
+    steps:
+    - uses: actions/setup-go@v3
+      with:
+        go-version: '1.19'
+        cache: true
+    - uses: actions/checkout@v3
+    - run: go test -bench .
