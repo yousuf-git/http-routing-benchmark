@@ -1,6 +1,11 @@
+on:
+  workflow_dispatch:
+
+name: Benchmark
+
 env:
   GOPRIVATE: "github.com/yousuf-git/dune-project"
-name: Benchmark
+
 jobs:
   test:
     strategy:
