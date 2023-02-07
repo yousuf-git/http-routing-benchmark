@@ -7,7 +7,7 @@ env:
   GOPRIVATE: "github.com/yousuf-git/dune-project"
 
 jobs:
-  test:
+  bench:
     strategy:
       matrix:
         os: [ubuntu-latest, macos-latest, windows-latest]
