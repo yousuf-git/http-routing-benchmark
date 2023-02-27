@@ -3,9 +3,6 @@ on:
 
 name: Benchmark
 
-env:
-  GOPRIVATE: "github.com/yousuf-git/dune-project"
-
 jobs:
   bench:
     strategy:
@@ -14,11 +11,6 @@ jobs:
     runs-on: ${{ matrix.os }}
     steps:
     - uses: actions/checkout@v3
-    - uses: extractions/netrc@v1
-      with:
-        machine: github.com
-        username: ${{ secrets.NETRC_USERNAME }}
-        password: ${{ secrets.NETRC_TOKEN }}
     - uses: actions/setup-go@v3
       with:
         go-version: '1.19'
