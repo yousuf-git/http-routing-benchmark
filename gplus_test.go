@@ -28,8 +28,8 @@ var gplusAPI = []route{
 	{"DELETE", "/moments/:id"},
 }
 
-func BenchmarkDune_GPlusAll(b *testing.B) {
-	router := prepareDune(gplusAPI)
+func BenchmarkApe_GPlusAll(b *testing.B) {
+	router := prepareApe(gplusAPI)
 	benchmarkRoutes(b, router, gplusAPI)
 }
 

@@ -2,7 +2,7 @@ package http_routing_benchmark
 
 import (
 	"github.com/gin-gonic/gin"
-	"github.com/yousuf-git/dune-project"
+	"github.com/yousuf64/ape"
 	"testing"
 )
 
@@ -108,9 +108,9 @@ var caseInsensitiveTestAPI = []route{
 	{"OPTIONS", "/HeRO-:name"},
 }
 
-func BenchmarkDune_CaseInsensitiveAll(b *testing.B) {
-	router := prepareDune(caseInsensitiveAPI, func(router *dune.Router) {
-		router.UseSanitizeURLMatch(dune.BehaviorExecute)
+func BenchmarkApe_CaseInsensitiveAll(b *testing.B) {
+	router := prepareApe(caseInsensitiveAPI, func(router *ape.Router) {
+		router.UseSanitizeURLMatch(ape.WithRedirect())
 	})
 	benchmarkRoutes(b, router, caseInsensitiveTestAPI)
 }

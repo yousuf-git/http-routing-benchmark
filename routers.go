@@ -3,7 +3,7 @@ package http_routing_benchmark
 import (
 	"github.com/gin-gonic/gin"
 	"github.com/labstack/echo/v4"
-	"github.com/yousuf-git/dune-project"
+	"github.com/yousuf64/ape"
 	"net/http"
 	"testing"
 )
@@ -12,12 +12,12 @@ type route struct {
 	method, path string
 }
 
-func prepareDune(routes []route, opts ...func(router *dune.Router)) http.Handler {
-	h := func(w http.ResponseWriter, r *http.Request, route dune.Route) error {
+func prepareApe(routes []route, opts ...func(router *ape.Router)) http.Handler {
+	h := func(w http.ResponseWriter, r *http.Request, route ape.Route) error {
 		return nil
 	}
 
-	r := dune.New()
+	r := ape.New()
 	for _, opt := range opts {
 		opt(r)
 	}

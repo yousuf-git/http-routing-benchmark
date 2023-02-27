@@ -49,8 +49,8 @@ var parseAPI = []route{
 	{"POST", "/1/functions"},
 }
 
-func BenchmarkDune_ParseAll(b *testing.B) {
-	router := prepareDune(parseAPI)
+func BenchmarkApe_ParseAll(b *testing.B) {
+	router := prepareApe(parseAPI)
 	benchmarkRoutes(b, router, parseAPI)
 }
 

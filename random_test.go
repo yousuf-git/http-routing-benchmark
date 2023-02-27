@@ -52,8 +52,8 @@ var randomAPI = []route{
 	{"OPTIONS", "/hero-:name"},
 }
 
-func BenchmarkDune_RandomAll(b *testing.B) {
-	router := prepareDune(randomAPI)
+func BenchmarkApe_RandomAll(b *testing.B) {
+	router := prepareApe(randomAPI)
 	benchmarkRoutes(b, router, randomAPI)
 }
 

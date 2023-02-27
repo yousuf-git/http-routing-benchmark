@@ -268,8 +268,8 @@ var githubAPI = []route{
 	{"DELETE", "/user/keys/:id"},
 }
 
-func BenchmarkDune_GithubAll(b *testing.B) {
-	router := prepareDune(githubAPI)
+func BenchmarkApe_GithubAll(b *testing.B) {
+	router := prepareApe(githubAPI)
 	benchmarkRoutes(b, router, githubAPI)
 }
 

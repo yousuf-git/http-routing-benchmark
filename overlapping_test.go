@@ -2,7 +2,7 @@ package http_routing_benchmark
 
 import "testing"
 
-var conflictingRoutesAPI = []route{
+var overlappingRoutesAPI = []route{
 	{"GET", "/foo/:p"},
 	{"GET", "/foo/:p/abc"},
 	{"GET", "/foo/:p/def"},
@@ -46,17 +46,17 @@ var conflictingRoutesAPI = []route{
 	{"OPTIONS", "/hhh-mmm"},
 }
 
-func BenchmarkDune_ConflictingRoutesAll(b *testing.B) {
-	router := prepareDune(conflictingRoutesAPI)
-	benchmarkRoutes(b, router, conflictingRoutesAPI)
+func BenchmarkApe_OverlappingRoutesAll(b *testing.B) {
+	router := prepareApe(overlappingRoutesAPI)
+	benchmarkRoutes(b, router, overlappingRoutesAPI)
 }
 
-func BenchmarkGin_ConflictingRoutesAll(b *testing.B) {
-	router := prepareGin(conflictingRoutesAPI)
-	benchmarkRoutes(b, router, conflictingRoutesAPI)
+func BenchmarkGin_OverlappingRoutesAll(b *testing.B) {
+	router := prepareGin(overlappingRoutesAPI)
+	benchmarkRoutes(b, router, overlappingRoutesAPI)
 }
 
-func BenchmarkEcho_ConflictingRoutesAll(b *testing.B) {
-	router := prepareEcho(conflictingRoutesAPI)
-	benchmarkRoutes(b, router, conflictingRoutesAPI)
+func BenchmarkEcho_OverlappingRoutesAll(b *testing.B) {
+	router := prepareEcho(overlappingRoutesAPI)
+	benchmarkRoutes(b, router, overlappingRoutesAPI)
 }
