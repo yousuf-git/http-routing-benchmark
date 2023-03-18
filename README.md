@@ -14,10 +14,10 @@ Benchmark suite can be run on [GitHub Actions](https://github.com/yousuf64/http-
 Date: Mar 18, 2023
 
 System specifications:
-* 12th Gen Intel Core i7-1265U (1.80 GHz)
-* 32GB RAM
+* 12th Gen Intel Core i7-1265U vPro (12 MB cache, 10 cores, up to 4.80 GHz Turbo)
+* 32 GB (2x 16 GB), DDR4-3200
 * Windows 10 Enterprise 22H2
-* Go 1.19.4 (windows/amd64) 
+* Go 1.19.4 (windows/amd64)
 
 ```
 BenchmarkShift_CaseInsensitiveAll-12             1101076               949.6 ns/op             0 B/op          0 allocs/op
