@@ -46,8 +46,8 @@ var overlappingRoutesAPI = []route{
 	{"OPTIONS", "/hhh-mmm"},
 }
 
-func BenchmarkApe_OverlappingRoutesAll(b *testing.B) {
-	router := prepareApe(overlappingRoutesAPI)
+func BenchmarkShift_OverlappingRoutesAll(b *testing.B) {
+	router := prepareShift(overlappingRoutesAPI)
 	benchmarkRoutes(b, router, overlappingRoutesAPI)
 }
 

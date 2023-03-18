@@ -52,8 +52,8 @@ var randomAPI = []route{
 	{"OPTIONS", "/hero-:name"},
 }
 
-func BenchmarkApe_RandomAll(b *testing.B) {
-	router := prepareApe(randomAPI)
+func BenchmarkShift_RandomAll(b *testing.B) {
+	router := prepareShift(randomAPI)
 	benchmarkRoutes(b, router, randomAPI)
 }
 

@@ -3,7 +3,7 @@ package http_routing_benchmark
 import (
 	"github.com/gin-gonic/gin"
 	"github.com/labstack/echo/v4"
-	"github.com/yousuf64/ape"
+	"github.com/yousuf64/shift"
 	"net/http"
 	"testing"
 )
@@ -12,12 +12,12 @@ type route struct {
 	method, path string
 }
 
-func prepareApe(routes []route, opts ...func(router *ape.Router)) http.Handler {
-	h := func(w http.ResponseWriter, r *http.Request, route ape.Route) error {
+func prepareShift(routes []route, opts ...func(router *shift.Router)) http.Handler {
+	h := func(w http.ResponseWriter, r *http.Request, route shift.Route) error {
 		return nil
 	}
 
-	r := ape.New()
+	r := shift.New()
 	for _, opt := range opts {
 		opt(r)
 	}

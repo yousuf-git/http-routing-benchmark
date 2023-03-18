@@ -73,8 +73,8 @@ github.com/valyala/bytebufferpool v1.0.0/go.mod h1:6bBcMArwyJ5K/AmCkWv1jt77kVWyC
 github.com/valyala/fasttemplate v1.2.1/go.mod h1:KHLXt3tVN2HBp8eijSv/kGJopbvo7S+qRAEEKiv+SiQ=
 github.com/valyala/fasttemplate v1.2.2 h1:lxLXG0uE3Qnshl9QyaK6XJxMXlQZELvChBOCmQD0Loo=
 github.com/valyala/fasttemplate v1.2.2/go.mod h1:KHLXt3tVN2HBp8eijSv/kGJopbvo7S+qRAEEKiv+SiQ=
-github.com/yousuf64/ape v0.1.0 h1:XvJ/qLDyTBrOYxNf5ayg6KgFkXQDkmIxgA6Oia1JvGY=
-github.com/yousuf64/ape v0.1.0/go.mod h1:MfBf9+fq4rr5s8e+XhP3TjF/aXIlrySZUqzz9njAOa8=
+github.com/yousuf64/shift v0.2.0 h1:r4Zix6lg5hdObNWRy/t/gh38j96EygJ5sXqZLQzVExs=
+github.com/yousuf64/shift v0.2.0/go.mod h1:D9b+mj37s3goL48EGX2oCrYHW4rg4c3Il2w6fukjxas=
 golang.org/x/crypto v0.0.0-20211215153901-e495a2d5b3d3/go.mod h1:IxCIyHEi3zRg3s0A5j5BB6A9Jmi73HwBIUl50j+osU4=
 golang.org/x/crypto v0.6.0 h1:qfktjS5LUO+fFKeJXZ+ikTRijMmljikvG68fpMMruSc=
 golang.org/x/crypto v0.6.0/go.mod h1:OFC/31mSvZgRz0V1QTNCzfAI1aIRzbiufJtkMIlEp58=

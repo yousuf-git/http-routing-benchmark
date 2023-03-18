@@ -164,8 +164,8 @@ var staticAPI = []route{
 	{"GET", "/progs/update.bash"},
 }
 
-func BenchmarkApe_StaticAll(b *testing.B) {
-	router := prepareApe(staticAPI)
+func BenchmarkShift_StaticAll(b *testing.B) {
+	router := prepareShift(staticAPI)
 	benchmarkRoutes(b, router, staticAPI)
 }
 

@@ -49,8 +49,8 @@ var parseAPI = []route{
 	{"POST", "/1/functions"},
 }
 
-func BenchmarkApe_ParseAll(b *testing.B) {
-	router := prepareApe(parseAPI)
+func BenchmarkShift_ParseAll(b *testing.B) {
+	router := prepareShift(parseAPI)
 	benchmarkRoutes(b, router, parseAPI)
 }
 

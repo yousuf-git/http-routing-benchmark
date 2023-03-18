@@ -2,7 +2,7 @@ package http_routing_benchmark
 
 import (
 	"github.com/gin-gonic/gin"
-	"github.com/yousuf64/ape"
+	"github.com/yousuf64/shift"
 	"testing"
 )
 
@@ -108,9 +108,9 @@ var caseInsensitiveTestAPI = []route{
 	{"OPTIONS", "/HeRO-:name"},
 }
 
-func BenchmarkApe_CaseInsensitiveAll(b *testing.B) {
-	router := prepareApe(caseInsensitiveAPI, func(router *ape.Router) {
-		router.UseSanitizeURLMatch(ape.WithRedirect())
+func BenchmarkShift_CaseInsensitiveAll(b *testing.B) {
+	router := prepareShift(caseInsensitiveAPI, func(router *shift.Router) {
+		router.UsePathCorrectionMatch(shift.WithRedirect())
 	})
 	benchmarkRoutes(b, router, caseInsensitiveTestAPI)
 }
