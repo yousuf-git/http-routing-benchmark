@@ -73,8 +73,8 @@ github.com/valyala/bytebufferpool v1.0.0/go.mod h1:6bBcMArwyJ5K/AmCkWv1jt77kVWyC
 github.com/valyala/fasttemplate v1.2.1/go.mod h1:KHLXt3tVN2HBp8eijSv/kGJopbvo7S+qRAEEKiv+SiQ=
 github.com/valyala/fasttemplate v1.2.2 h1:lxLXG0uE3Qnshl9QyaK6XJxMXlQZELvChBOCmQD0Loo=
 github.com/valyala/fasttemplate v1.2.2/go.mod h1:KHLXt3tVN2HBp8eijSv/kGJopbvo7S+qRAEEKiv+SiQ=
-github.com/yousuf64/shift v0.4.0 h1:jiuYPa9KGyTShM08GEcSRSaZeO2jPEIpdqaplsRtk8g=
-github.com/yousuf64/shift v0.4.0/go.mod h1:D9b+mj37s3goL48EGX2oCrYHW4rg4c3Il2w6fukjxas=
+github.com/yousuf64/shift v0.5.0-rc.0.20231218105329-5702b5504c31 h1:BpYM3s42oFt4fhhv+mS2rX9uofJXGHr/uY5p+4mXn5I=
+github.com/yousuf64/shift v0.5.0-rc.0.20231218105329-5702b5504c31/go.mod h1:3NVba3VRxlX/naSY8QRuiJ8H0UYAm6Wb2sD0rOIca9w=
 golang.org/x/arch v0.0.0-20210923205945-b76863e36670/go.mod h1:5om86z9Hs0C8fWVUuoMHwpExlXzs5Tkyp9hOrfG7pp8=
 golang.org/x/arch v0.3.0 h1:02VY4/ZcO/gBOH6PUaoiptASxtXU10jazRCP865E97k=
 golang.org/x/arch v0.3.0/go.mod h1:5om86z9Hs0C8fWVUuoMHwpExlXzs5Tkyp9hOrfG7pp8=

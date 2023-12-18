@@ -1,11 +1,11 @@
 module http-routing-benchmark
 
-go 1.19
+go 1.20
 
 require (
 	github.com/gin-gonic/gin v1.9.1
 	github.com/labstack/echo/v4 v4.11.3
-	github.com/yousuf64/shift v0.4.0
+	github.com/yousuf64/shift v0.5.0-rc.0.20231218105329-5702b5504c31
 )
 
 require (
